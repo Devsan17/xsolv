@@ -52,7 +52,7 @@ export default function Home() {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
               <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
                 <p className="text-3xl font-bold text-white tracking-[0.2em]">
-                  Solve support succeed
+                  Solve Support Succeed
                 </p>
               </div>
             </div>
