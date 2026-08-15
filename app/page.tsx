@@ -45,11 +45,11 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="fixed top-0 left-0 z-10 w-screen h-screen flex items-center justify-center">
+      <section className="relative w-full h-screen flex items-center justify-center">
         <div className="w-full h-full flex flex-col items-center justify-center">
           {/* Main Hero Card - Full Screen */}
           <div className="relative w-full h-full">
-            <div className="relative overflow-hidden bg-gradient-to-br from-blue-400 via-cyan-300 to-slate-400 w-full h-full">
+            <div className="relative rounded-t-3xl overflow-hidden bg-gradient-to-br from-blue-400 via-cyan-300 to-slate-400 w-full h-full">
               {/* Background overlay - simulates the image */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-slate-600/30" />
 
@@ -76,19 +76,19 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Floating White Integration Bar - positioned at bottom */}
-              <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 z-20 w-full max-w-3xl px-4">
-                <div className="rounded-full bg-white shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-10 py-6">
+              {/* Floating Black Integration Bar - positioned at bottom */}
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 z-20 w-full max-w-3xl px-4">
+                <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-10 py-6">
                   <div className="flex items-center justify-center gap-10 sm:gap-14">
                     {integrations.map((integration) => (
                       <div
                         key={integration.name}
                         className="flex flex-col items-center gap-2 transition-all duration-300 hover:scale-110"
                       >
-                        <div className="text-lg font-light text-black/70">
+                        <div className="text-lg font-light text-white/90">
                           {integration.icon}
                         </div>
-                        <span className="whitespace-nowrap text-[11px] font-medium text-black/60 tracking-[0.02em]">
+                        <span className="whitespace-nowrap text-[11px] font-medium text-white/75 tracking-[0.02em]">
                           {integration.name}
                         </span>
                       </div>
@@ -100,6 +100,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Blank Section */}
+      <section className="w-full h-screen bg-white" />
     </main>
   );
 }
