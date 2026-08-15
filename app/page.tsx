@@ -77,23 +77,11 @@ export default function Home() {
               </div>
 
               {/* Floating Black Integration Bar - positioned at bottom */}
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 z-20 w-full max-w-3xl px-4">
-                <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-10 py-6">
-                  <div className="flex items-center justify-center gap-10 sm:gap-14">
-                    {integrations.map((integration) => (
-                      <div
-                        key={integration.name}
-                        className="flex flex-col items-center gap-2 transition-all duration-300 hover:scale-110"
-                      >
-                        <div className="text-lg font-light text-white/90">
-                          {integration.icon}
-                        </div>
-                        <span className="whitespace-nowrap text-[11px] font-medium text-white/75 tracking-[0.02em]">
-                          {integration.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
+                <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
+                  <p className="text-3xl font-bold text-white tracking-[0.2em]">
+                    Solve support succeed
+                  </p>
                 </div>
               </div>
             </div>
