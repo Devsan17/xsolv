@@ -47,42 +47,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <div className="w-full h-full flex flex-col items-center justify-center">
-          {/* Main Hero Card - Full Screen */}
-          <div className="relative w-full h-full">
-            <div className="relative rounded-t-3xl overflow-hidden bg-gradient-to-br from-blue-400 via-cyan-300 to-slate-400 w-full h-full">
-              {/* Background overlay - simulates the image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-slate-600/30" />
-
-              {/* Content Container */}
-              <div className="relative h-full flex items-center justify-between px-16">
-                {/* Left Side - Stat */}
-                <div className="flex flex-col gap-6 max-w-md">
-                  <div className="text-9xl font-black text-white tracking-tight leading-none">
-                    98%
-                  </div>
-                  <p className="text-2xl text-white/90 font-light leading-relaxed">
-                    Get More Done, Effortlessly
-                  </p>
-                </div>
-
-                {/* Right Side - Description */}
-                <div className="flex flex-col gap-4 max-w-md text-right">
-                  <h2 className="text-4xl font-bold text-white tracking-tight leading-tight">
-                    Advanced Integrations
-                  </h2>
-                  <p className="text-base text-white/85 font-light leading-relaxed">
-                    Connect with your favorite tools to create a seamless workflow.
-                  </p>
-                </div>
-              </div>
-
-              {/* Floating Black Integration Bar - positioned at bottom */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
-                <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
-                  <p className="text-3xl font-bold text-white tracking-[0.2em]">
-                    Solve support succeed
-                  </p>
-                </div>
+          <div className="relative w-full h-[500px]">
+            {/* Floating Black Integration Bar - positioned at bottom */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
+              <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
+                <p className="text-3xl font-bold text-white tracking-[0.2em]">
+                  Solve support succeed
+                </p>
               </div>
             </div>
           </div>
