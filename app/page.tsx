@@ -48,6 +48,16 @@ export default function Home() {
       <section className="relative w-full h-screen flex items-center justify-center">
         <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="relative w-full h-[500px]">
+            <div className="absolute left-[22%] top-[38%] z-10 -translate-x-1/2 -translate-y-1/2">
+              <Image
+                src="/images/xsolv-3d-logo.png"
+                alt="Xsolv logo"
+                width={440}
+                height={440}
+                className="object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.12)]"
+              />
+            </div>
+
             {/* Floating Black Integration Bar - positioned at bottom */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
               <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
