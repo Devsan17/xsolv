@@ -298,7 +298,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="why-choose" className="flex min-h-screen w-full items-center bg-black text-white">
+      <section id="why-choose" className="flex min-h-screen w-full items-start bg-black pt-28 text-white sm:pt-32 lg:items-center lg:pt-10">
         <div className="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr] lg:items-start">
             <div className="max-w-[560px]">
