@@ -480,12 +480,36 @@ export default function Home() {
               <p className="mt-2 text-[15px] font-semibold uppercase tracking-[0.18em] text-black/55 sm:text-[16px]">
                 Director
               </p>
+              <div className="relative mt-6 w-full max-w-[420px] lg:hidden">
+                <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
+                <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
+                  {ceo2Ok ? (
+                    <Image
+                      src="/images/team/preethi.png"
+                      alt="Preethi P Suvarna"
+                      width={700}
+                      height={900}
+                      className="h-auto w-full object-cover"
+                      onError={() => setCeo2Ok(false)}
+                    />
+                  ) : (
+                    <div className="flex aspect-[7/9] items-center justify-center bg-gradient-to-br from-black/5 to-black/15 p-6 text-center">
+                      <div>
+                        <div className="text-[28px] font-black tracking-[-0.05em] text-black">Preethi P</div>
+                        <div className="mt-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-black/55">
+                          Image unavailable
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
               <p className="mt-6 max-w-[760px] text-[15px] leading-[1.85] text-black/70 sm:text-[16px]">
                 At Xsolv, our focus is on building strong systems, dependable teams, and lasting relationships with our clients. We believe that sustainable growth comes from consistency, collaboration, and a commitment to doing things the right way. As we continue to grow, our priority remains the same: to empower our people, deliver meaningful results for our clients, and create a workplace where everyone has the opportunity to learn, contribute, and move forward with confidence.
               </p>
             </div>
 
-            <div className="relative mx-auto w-full max-w-[420px]">
+            <div className="relative mx-auto hidden w-full max-w-[420px] lg:block">
               <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 {ceo2Ok ? (
