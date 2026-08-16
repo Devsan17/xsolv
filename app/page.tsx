@@ -435,7 +435,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 {ceo1Ok ? (
                   <Image
-                    src="/images/team/ceo1.png"
+                    src="/images/team/kiran.png"
                     alt="Kiran S Poojary"
                     width={900}
                     height={1100}
@@ -490,7 +490,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 {ceo2Ok ? (
                   <Image
-                    src="/images/team/ceo2.png"
+                    src="/images/team/preethi.png"
                     alt="Preethi P Suvarna"
                     width={700}
                     height={900}
