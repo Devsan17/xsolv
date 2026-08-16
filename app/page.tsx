@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 const navItems = [
@@ -12,6 +13,8 @@ const navItems = [
 const iconClassName = "h-6 w-6";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="min-h-screen bg-white text-[#111111]">
       <header className="sticky top-0 z-50 px-4 pt-4">
@@ -29,6 +32,29 @@ export default function Home() {
                 Xsolv
               </span>
             </div>
+
+            <button
+              type="button"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-white text-black transition lg:hidden"
+              aria-label="Toggle navigation"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                {menuOpen ? (
+                  <>
+                    <path d="M6 6l12 12" />
+                    <path d="M18 6L6 18" />
+                  </>
+                ) : (
+                  <>
+                    <path d="M4 7h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 17h16" />
+                  </>
+                )}
+              </svg>
+            </button>
           </div>
 
           <nav className="hidden items-center gap-8 text-sm text-black/60 md:flex">
@@ -47,6 +73,23 @@ export default function Home() {
             Book a call
           </button>
         </div>
+
+        {menuOpen ? (
+          <div className="mx-auto mt-3 max-w-7xl rounded-3xl border border-black/10 bg-white px-4 py-4 shadow-[0_10px_25px_rgba(0,0,0,0.08)] md:hidden">
+            <nav className="flex flex-col gap-3">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-2xl px-2 py-2 text-sm font-medium text-black/70 transition hover:bg-black/5 hover:text-black"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        ) : null}
       </header>
 
       <a
@@ -103,7 +146,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-medium tracking-[0.18em] text-black/70 uppercase">
+            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-bold tracking-[0.18em] text-black/70 uppercase">
               Solve support succeed
             </div>
 
@@ -256,72 +299,62 @@ export default function Home() {
       <section id="why-choose" className="flex min-h-screen w-full items-center bg-black text-white">
         <div className="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr] lg:items-start">
-              <div className="max-w-[560px]">
-                <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/72 sm:text-[12px]">
-                  <span>Why Businesses Choose Xsolv</span>
-                </div>
-
-                <h2 className="mt-6 text-[clamp(44px,5vw,64px)] font-black leading-[1.05] tracking-[-0.05em] text-white">
-                  Performance you can
-                  <br />
-                  measure.
-                </h2>
+            <div className="max-w-[560px]">
+              <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/72 sm:text-[12px]">
+                <span>Why Businesses Choose Xsolv</span>
               </div>
 
-              <div className="relative overflow-hidden rounded-[12px] border border-white/8 bg-[#050505] p-5 sm:p-6">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_45%,rgba(255,255,255,0.16),transparent_36%),radial-gradient(circle_at_52%_62%,rgba(255,255,255,0.08),transparent_30%)]" />
-                <div className="relative flex h-[280px] flex-col justify-between">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="max-w-[280px] text-[13px] leading-[1.45] text-white/72">
-                      A sleek line graph showing a strong upward trend in business performance over time.
-                    </div>
-                    <div className="text-right text-[34px] font-medium tracking-[-0.06em] text-white/88">+32%</div>
+              <h2 className="mt-6 max-w-[520px] text-[clamp(34px,5vw,64px)] font-black leading-[1.02] tracking-[-0.05em] text-white sm:text-[clamp(40px,5vw,64px)]">
+                Performance you can
+                <br />
+                measure.
+              </h2>
+            </div>
+
+            <div className="relative overflow-hidden rounded-[12px] border border-white/8 bg-[#050505] p-4 sm:p-5 md:p-6">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_45%,rgba(255,255,255,0.16),transparent_36%),radial-gradient(circle_at_52%_62%,rgba(255,255,255,0.08),transparent_30%)]" />
+              <div className="relative flex min-h-[320px] flex-col justify-between gap-5 sm:min-h-[360px]">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="max-w-[280px] text-[12px] leading-[1.45] text-white/72 sm:text-[13px]">
+                    A sleek line graph showing a strong upward trend in business performance over time.
                   </div>
+                  <div className="text-right text-[28px] font-medium tracking-[-0.06em] text-white/88 sm:text-[34px]">+32%</div>
+                </div>
 
-                  <svg viewBox="0 0 900 250" className="h-[170px] w-full" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="xsGraphGlow" x1="0%" y1="100%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="rgba(255,255,255,0.0)" />
-                        <stop offset="50%" stopColor="rgba(255,255,255,0.14)" />
-                        <stop offset="100%" stopColor="rgba(255,255,255,0.28)" />
-                      </linearGradient>
-                      <linearGradient id="xsGraphFill" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stopColor="rgba(255,255,255,0.72)" />
-                        <stop offset="100%" stopColor="rgba(255,255,255,0.02)" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34 L900,250 L0,250 Z"
-                      fill="url(#xsGraphFill)"
-                    />
-                    <path
-                      d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34"
-                      fill="none"
-                      stroke="url(#xsGraphGlow)"
-                      strokeWidth="5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
+                <svg viewBox="0 0 900 250" className="h-[140px] w-full sm:h-[170px]" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="xsGraphGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="rgba(255,255,255,0.0)" />
+                      <stop offset="50%" stopColor="rgba(255,255,255,0.14)" />
+                      <stop offset="100%" stopColor="rgba(255,255,255,0.28)" />
+                    </linearGradient>
+                    <linearGradient id="xsGraphFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="rgba(255,255,255,0.72)" />
+                      <stop offset="100%" stopColor="rgba(255,255,255,0.02)" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34 L900,250 L0,250 Z" fill="url(#xsGraphFill)" />
+                  <path d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34" fill="none" stroke="url(#xsGraphGlow)" strokeWidth="5" strokeLinecap="round" />
+                </svg>
 
-                  <div className="grid grid-cols-3 gap-2">
-                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
-                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">+35%</div>
-                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Improvement in process productivity</p>
-                    </div>
-                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
-                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">- 40%</div>
-                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Reduction in operational delays</p>
-                    </div>
-                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
-                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">24/7</div>
-                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Continuous customer support coverage</p>
-                    </div>
+                <div className="grid gap-2 sm:grid-cols-3">
+                  <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                    <div className="text-[24px] font-medium tracking-[-0.05em] text-white sm:text-[28px]">+35%</div>
+                    <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Improvement in process productivity</p>
+                  </div>
+                  <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                    <div className="text-[24px] font-medium tracking-[-0.05em] text-white sm:text-[28px]">- 40%</div>
+                    <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Reduction in operational delays</p>
+                  </div>
+                  <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                    <div className="text-[24px] font-medium tracking-[-0.05em] text-white sm:text-[28px]">24/7</div>
+                    <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Continuous customer support coverage</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
               {[
                 {
                   title: "Operational Efficiency",
@@ -378,29 +411,78 @@ export default function Home() {
                   ),
                 },
               ].map((item) => (
-                <div
-                  key={item.title}
-                  className="flex min-h-[90px] items-center gap-4 rounded-[8px] border border-white/5 bg-white/[0.03] px-4 py-4"
-                >
+                <div key={item.title} className="flex min-h-[86px] items-center gap-4 rounded-[8px] border border-white/5 bg-white/[0.03] px-4 py-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] border border-white/12 bg-white/[0.04] text-white">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-[19px] w-[19px]"
-                      aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-[19px] w-[19px]" aria-hidden="true">
                       {item.icon}
                     </svg>
                   </div>
-                  <div className="text-[15px] font-semibold leading-[1.2] text-white">
-                    {item.title}
-                  </div>
+                  <div className="text-[15px] font-semibold leading-[1.2] text-white">{item.title}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-white pb-6 pt-16 text-black">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-[minmax(320px,420px)_1fr] lg:items-center">
+            <div className="relative mx-auto w-full max-w-[420px]">
+              <div className="absolute -left-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
+              <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
+                <Image
+                  src="/images/team/CEO 1.png"
+                  alt="Xsolv CEO"
+                  width={900}
+                  height={1100}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="max-w-[760px]">
+              <h2 className="text-[clamp(32px,4vw,48px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
+                Kiran S Poojary
+              </h2>
+              <p className="mt-2 text-[15px] font-semibold uppercase tracking-[0.18em] text-black/55 sm:text-[16px]">
+                Founder &amp; Managing Director
+              </p>
+              <p className="mt-6 max-w-[760px] text-[15px] leading-[1.85] text-black/70 sm:text-[16px]">
+                At Xsolv, I believe business growth and employee growth should happen together. We want to build a company where people don&apos;t simply come to work – they learn, grow, take responsibility, develop confidence, and build their future. Our goal is simple: create value for our clients while creating meaningful opportunities for our people. When our clients grow, we grow. When our employees grow, Xsolv grows with them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-white py-16 text-black">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-[1fr_minmax(320px,420px)] lg:items-center">
+            <div className="max-w-[760px]">
+              <h2 className="text-[clamp(32px,4vw,48px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
+                Preethi P Suvarna
+              </h2>
+              <p className="mt-2 text-[15px] font-semibold uppercase tracking-[0.18em] text-black/55 sm:text-[16px]">
+                Director
+              </p>
+              <p className="mt-6 max-w-[760px] text-[15px] leading-[1.85] text-black/70 sm:text-[16px]">
+                At Xsolv, our focus is on building strong systems, dependable teams, and lasting relationships with our clients. We believe that sustainable growth comes from consistency, collaboration, and a commitment to doing things the right way. As we continue to grow, our priority remains the same: to empower our people, deliver meaningful results for our clients, and create a workplace where everyone has the opportunity to learn, contribute, and move forward with confidence.
+              </p>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-[420px]">
+              <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
+              <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
+                <Image
+                  src="/images/team/CEO 2.png"
+                  alt="Xsolv team member"
+                  width={700}
+                  height={900}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -413,11 +495,13 @@ export default function Home() {
             <span>Systems</span>
             <span>Growth</span>
           </div>
-          <span className="flex items-center justify-center gap-1.5 lg:justify-self-center">
-            Design &amp; Code by
+          <span className="flex flex-col items-center justify-center gap-1.5 lg:justify-self-center">
+            <span>Design &amp; Code by</span>
             <a
-              className="text-lg font-bold uppercase tracking-[0.08em] md:text-xl"
-              href="/"
+              className="text-sm font-bold uppercase tracking-[0.08em] md:text-xl"
+              href="https://www.bigbotco.com/"
+              target="_blank"
+              rel="noreferrer"
               style={{ fontFamily: '"Courier New", monospace' }}
             >
               BigBotCo.
@@ -428,4 +512,5 @@ export default function Home() {
     </main>
   );
 }
+
 
