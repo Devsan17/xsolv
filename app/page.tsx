@@ -141,7 +141,7 @@ export default function Home() {
           <div className="relative mt-[-22px] h-[360px] w-full">
             <div className="flex w-full justify-center">
               <div className="flex h-full w-fit items-end gap-3">
-                <div className="h-[260px] w-[144px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
+                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
                   <Image src="/images/profile pic/pro9.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
                 <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
                   <Image src="/images/profile pic/pro7.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[220px] w-[112px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
+                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
                   <Image src="/images/profile pic/pro8.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
               </div>
