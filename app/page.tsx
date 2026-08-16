@@ -356,7 +356,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-6 grid w-full gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-1 grid w-full gap-4 md:grid-cols-2 xl:grid-cols-3 lg:col-span-2">
               {[
                 {
                   title: "Operational Efficiency",
