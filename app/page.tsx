@@ -45,26 +45,35 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center">
-        <div className="w-full h-full flex flex-col items-center justify-center">
-          <div className="relative w-full h-[500px]">
-            <div className="absolute left-[22%] top-[38%] z-10 -translate-x-1/2 -translate-y-1/2">
-              <Image
-                src="/images/xsolv-3d-logo.png"
-                alt="Xsolv logo"
-                width={440}
-                height={440}
-                className="object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.12)]"
-              />
-            </div>
+      <section className="relative h-screen w-full overflow-hidden">
+        <div className="flex h-full w-full items-center justify-center px-4 md:px-8">
+          <div className="relative h-[500px] w-full max-w-[1600px] overflow-hidden">
+            <div className="flex h-full w-full items-center justify-between gap-4 md:gap-8">
+              <div className="flex w-[28%] min-w-0 shrink-0 items-center justify-center">
+                <Image
+                  src="/images/xsolv-3d-logo.png"
+                  alt="Xsolv logo"
+                  width={360}
+                  height={360}
+                  className="h-auto w-full max-h-[320px] object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.12)]"
+                />
+              </div>
 
-            {/* Floating Black Integration Bar - positioned at bottom */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[70%] px-8">
-              <div className="rounded-t-full bg-black shadow-[0_20px_40px_rgba(0,0,0,0.15)] px-16 py-8 flex items-center justify-center">
-                <p className="text-3xl font-bold text-white tracking-[0.2em]">
-                  Solve Support Succeed
+              <div className="flex min-w-0 flex-1 items-center justify-center overflow-hidden">
+                <p className="text-center font-black uppercase leading-none tracking-[0.05em] text-black/80 text-[clamp(4rem,8vw,12rem)]">
+                  Xsolv
                 </p>
               </div>
+            </div>
+
+            <div className="pointer-events-none absolute bottom-0 right-0 flex w-[22%] max-w-[300px] translate-x-[2%] translate-y-[2%] items-end justify-end overflow-hidden">
+              <Image
+                src="/images/Banner%20img.png"
+                alt="Xsolv banner"
+                width={420}
+                height={420}
+                className="h-auto w-full max-h-[260px] object-contain scale-[1.1] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+              />
             </div>
           </div>
         </div>
