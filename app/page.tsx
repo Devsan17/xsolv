@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex items-center justify-between gap-3 lg:justify-start">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/xsolv-3d-logo.png"
+                src="/images/3d.png"
                 alt="Xsolv logo"
                 width={28}
                 height={28}
