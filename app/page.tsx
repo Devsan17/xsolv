@@ -118,77 +118,49 @@ export default function Home() {
       <section className="relative h-screen max-h-[760px] min-h-[680px] w-full overflow-hidden bg-white">
         <div className="mx-auto flex h-full w-full max-w-[1600px] flex-col items-center px-4 pb-10 pt-[64px] sm:px-6 lg:px-10">
           <div className="mx-auto flex max-w-[620px] flex-col items-center text-center">
-            <span className="inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-1 text-[18px] font-semibold text-orange-600">
-              Behind the Designs
-            </span>
-
             <h2 className="mt-4 max-w-[620px] text-[clamp(38px,4vw,52px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
-              Curious What Else I&apos;ve
-              <br />
-              Created?
+              Trusted by leaders
             </h2>
 
-            <p className="mt-5 max-w-[620px] text-[13px] leading-[1.55] text-black/45">
-              Explore more brand identities, packaging, and digital design work in my extended portfolio.
+            <p className="mt-5 max-w-[620px] text-[30px] font-bold leading-[1.55] text-black/45">
+              From various industries
             </p>
 
-            <button className="mt-5 inline-flex h-9 items-center gap-2 rounded-full border border-black/10 bg-white px-4 text-[12px] font-medium text-black shadow-[0_8px_20px_rgba(0,0,0,0.06)] transition-transform duration-300 hover:-translate-y-0.5">
-              <span>See more Projects</span>
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-white">→</span>
-            </button>
           </div>
 
           <div className="relative mt-[-22px] h-[360px] w-full">
             <div className="flex w-full justify-center">
               <div className="flex h-full w-fit items-end gap-3">
-                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
+                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
                   <Image src="/images/profile pic/pro9.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
+                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
                   <Image src="/images/profile pic/pro1.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]">
+                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
                   <Image src="/images/profile pic/pro2.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]">
+                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
                   <Image src="/images/profile pic/pro3.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[160px] w-[82px] flex-none overflow-hidden rounded-[16px] bg-[#f7f7f7] shadow-[0_12px_26px_rgba(0,0,0,0.08)]">
+                <div className="h-[160px] w-[82px] flex-none overflow-hidden rounded-[16px] bg-[#f7f7f7] shadow-[0_12px_26px_rgba(0,0,0,0.08)]" style={{ transform: "translateY(34px)" }}>
                   <Image src="/images/profile pic/pro4.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]">
+                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
                   <Image src="/images/profile pic/pro5.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]">
+                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
                   <Image src="/images/profile pic/pro6.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
+                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
                   <Image src="/images/profile pic/pro7.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]">
+                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
                   <Image src="/images/profile pic/pro8.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
 
-            <div className="mx-auto mt-7 flex w-fit items-start justify-center gap-[96px] text-center">
-              <div className="w-[140px]">
-                <div className="text-[11px] font-bold text-orange-500">#01</div>
-                <div className="text-[12px] text-black/70">Strategy &amp; Planning</div>
-              </div>
-              <div className="w-[120px]">
-                <div className="text-[11px] font-bold text-orange-500">#02</div>
-                <div className="text-[12px] text-black/70">Design &amp; Development</div>
-              </div>
-              <div className="w-[120px]">
-                <div className="text-[11px] font-bold text-orange-500">#03</div>
-                <div className="text-[12px] text-black/70">Launch &amp; Growth</div>
-              </div>
-              <div className="w-[140px]">
-                <div className="text-[11px] font-bold text-orange-500">#04</div>
-                <div className="text-[12px] text-black/70">Ongoing Support</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
