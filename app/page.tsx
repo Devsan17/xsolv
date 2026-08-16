@@ -299,7 +299,7 @@ export default function Home() {
       </section>
 
       <section id="why-choose" className="flex min-h-screen w-full items-start bg-black pt-28 text-white sm:pt-32 lg:items-center lg:pt-10">
-        <div className="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 lg:px-10">
+        <div className="mx-auto w-full max-w-none px-4 py-10 sm:px-6 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr] lg:items-start">
             <div className="max-w-[560px]">
               <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/72 sm:text-[12px]">
@@ -356,7 +356,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-6 grid w-full gap-4 md:grid-cols-2 xl:grid-cols-3">
               {[
                 {
                   title: "Operational Efficiency",
@@ -413,7 +413,7 @@ export default function Home() {
                   ),
                 },
               ].map((item) => (
-                <div key={item.title} className="flex min-h-[86px] items-center gap-4 rounded-[8px] border border-white/5 bg-white/[0.03] px-4 py-4">
+                <div key={item.title} className="flex min-h-[86px] w-full items-center gap-4 rounded-[8px] border border-white/5 bg-white/[0.03] px-4 py-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] border border-white/12 bg-white/[0.04] text-white">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-[19px] w-[19px]" aria-hidden="true">
                       {item.icon}
