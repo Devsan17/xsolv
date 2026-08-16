@@ -94,7 +94,7 @@ export default function Home() {
                 alt="Xsolv text"
                 width={700}
                 height={220}
-                className="h-auto w-[min(700px,55vw)] object-contain"
+                className="h-auto w-[min(700px,55vw)] -ml-8 object-contain"
               />
             </div>
 
