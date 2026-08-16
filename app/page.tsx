@@ -103,7 +103,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-medium tracking-[0.18em] text-black/70 uppercase">
+            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-bold tracking-[0.18em] text-black/70 uppercase">
               Solve support succeed
             </div>
 
