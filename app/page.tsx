@@ -45,17 +45,17 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[calc(100vh-88px)] w-full overflow-hidden bg-white">
-        <div className="relative mx-auto h-full w-full max-w-[1600px]">
+      <section className="relative w-full overflow-hidden bg-white">
+        <div className="relative mx-auto w-full max-w-[1600px] min-h-[560px]">
           <div className="absolute inset-y-0 left-0 flex items-center justify-start pl-0 md:pl-2 xl:pl-6">
             <p className="text-left font-black uppercase leading-[0.7] tracking-[-0.08em] text-black/80 text-[clamp(5.5rem,12vw,22rem)]">
               XSOLV
             </p>
           </div>
 
-          <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-2">
+          <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-0">
             <Image
-              src="/images/Banner%20img.png"
+              src="/images/img1.png"
               alt="Xsolv banner"
               width={500}
               height={500}
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Blank Section */}
-      <section className="w-full h-screen bg-black" />
+      <section className="m-0 block w-full bg-black p-0 min-h-[420px] -mt-20" />
     </main>
   );
 }
