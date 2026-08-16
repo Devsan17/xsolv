@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       <section className="relative h-screen max-h-[760px] min-h-[680px] w-full overflow-hidden bg-white">
-        <div className="mx-auto flex h-full w-full max-w-[1600px] flex-col items-center px-4 pb-10 pt-[86px] sm:px-6 lg:px-10">
+        <div className="mx-auto flex h-full w-full max-w-[1600px] flex-col items-center px-4 pb-10 pt-[64px] sm:px-6 lg:px-10">
           <div className="mx-auto flex max-w-[620px] flex-col items-center text-center">
             <span className="inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-1 text-[18px] font-semibold text-orange-600">
               Behind the Designs
@@ -138,7 +138,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="relative mt-2 h-[340px] w-full">
+          <div className="relative mt-[-22px] h-[360px] w-full">
             <div className="flex w-full justify-center">
               <div className="flex h-full w-fit items-end gap-3">
                 <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
@@ -165,21 +165,23 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="absolute left-[52px] top-[300px]">
-              <div className="text-[11px] font-bold text-orange-500">#01</div>
-              <div className="text-[12px] text-black/70">Strategy &amp; Planning</div>
-            </div>
-            <div className="absolute left-[310px] top-[300px]">
-              <div className="text-[11px] font-bold text-orange-500">#02</div>
-              <div className="text-[12px] text-black/70">Design &amp; Development</div>
-            </div>
-            <div className="absolute right-[310px] top-[300px] text-right">
-              <div className="text-[11px] font-bold text-orange-500">#03</div>
-              <div className="text-[12px] text-black/70">Launch &amp; Growth</div>
-            </div>
-            <div className="absolute right-[52px] top-[300px] text-right">
-              <div className="text-[11px] font-bold text-orange-500">#04</div>
-              <div className="text-[12px] text-black/70">Ongoing Support</div>
+            <div className="mx-auto mt-7 flex w-fit items-start justify-center gap-[96px] text-center">
+              <div className="w-[140px]">
+                <div className="text-[11px] font-bold text-orange-500">#01</div>
+                <div className="text-[12px] text-black/70">Strategy &amp; Planning</div>
+              </div>
+              <div className="w-[120px]">
+                <div className="text-[11px] font-bold text-orange-500">#02</div>
+                <div className="text-[12px] text-black/70">Design &amp; Development</div>
+              </div>
+              <div className="w-[120px]">
+                <div className="text-[11px] font-bold text-orange-500">#03</div>
+                <div className="text-[12px] text-black/70">Launch &amp; Growth</div>
+              </div>
+              <div className="w-[140px]">
+                <div className="text-[11px] font-bold text-orange-500">#04</div>
+                <div className="text-[12px] text-black/70">Ongoing Support</div>
+              </div>
             </div>
           </div>
         </div>
