@@ -138,17 +138,31 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="relative left-1/2 mt-2 h-[340px] w-[min(1700px,calc(100vw-48px))] max-w-none -translate-x-1/2">
-            <div className="flex h-full w-full items-end justify-center gap-3">
-              <div className="h-[300px] w-[175px] flex-none overflow-hidden rounded-[24px] bg-gradient-to-br from-amber-100 via-orange-50 to-white shadow-[0_24px_48px_rgba(0,0,0,0.10)]" />
-              <div className="h-[270px] w-[150px] flex-none overflow-hidden rounded-[22px] bg-gradient-to-br from-slate-100 via-zinc-100 to-white shadow-[0_20px_40px_rgba(0,0,0,0.08)]" />
-              <div className="h-[240px] w-[135px] flex-none overflow-hidden rounded-[18px] bg-gradient-to-br from-stone-100 via-zinc-50 to-white shadow-[0_18px_34px_rgba(0,0,0,0.08)]" />
-              <div className="h-[190px] w-[105px] flex-none overflow-hidden rounded-[16px] bg-gradient-to-br from-sky-100 via-white to-zinc-50 shadow-[0_14px_28px_rgba(0,0,0,0.06)]" />
-              <div className="h-[170px] w-[95px] flex-none overflow-hidden rounded-[16px] bg-gradient-to-br from-slate-100 via-white to-zinc-50 shadow-[0_14px_28px_rgba(0,0,0,0.06)]" />
-              <div className="h-[190px] w-[105px] flex-none overflow-hidden rounded-[16px] bg-gradient-to-br from-rose-100 via-orange-50 to-white shadow-[0_14px_28px_rgba(0,0,0,0.06)]" />
-              <div className="h-[240px] w-[135px] flex-none overflow-hidden rounded-[18px] bg-gradient-to-br from-stone-100 via-slate-50 to-white shadow-[0_18px_34px_rgba(0,0,0,0.08)]" />
-              <div className="h-[270px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-gradient-to-br from-lime-100 via-yellow-50 to-white shadow-[0_20px_40px_rgba(0,0,0,0.08)]" />
-              <div className="h-[300px] w-[175px] flex-none overflow-hidden rounded-[24px] bg-gradient-to-br from-orange-100 via-amber-50 to-white shadow-[0_24px_48px_rgba(0,0,0,0.10)]" />
+          <div className="relative mt-2 h-[340px] w-full">
+            <div className="flex w-full justify-center">
+              <div className="flex h-full w-fit items-end gap-3">
+                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
+                  <Image src="/images/profile pic/pro1.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]">
+                  <Image src="/images/profile pic/pro2.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]">
+                  <Image src="/images/profile pic/pro3.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[160px] w-[82px] flex-none overflow-hidden rounded-[16px] bg-[#f7f7f7] shadow-[0_12px_26px_rgba(0,0,0,0.08)]">
+                  <Image src="/images/profile pic/pro4.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]">
+                  <Image src="/images/profile pic/pro5.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]">
+                  <Image src="/images/profile pic/pro6.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]">
+                  <Image src="/images/profile pic/pro7.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
+                </div>
+              </div>
             </div>
 
             <div className="absolute left-[52px] top-[300px]">
