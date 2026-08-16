@@ -78,6 +78,10 @@ export default function Home() {
             />
           </div>
 
+          <div className="mb-6 text-center text-[14px] font-medium tracking-[0.18em] text-black/70 uppercase md:hidden">
+            Solve support succeed
+          </div>
+
           <div className="relative hidden min-h-[560px] md:block">
             <div className="absolute left-6 top-1/2 z-10 -translate-y-1/2 md:left-10 xl:left-16">
               <Image
@@ -97,6 +101,10 @@ export default function Home() {
                 height={220}
                 className="h-auto w-[min(700px,55vw)] -ml-8 object-contain"
               />
+            </div>
+
+            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-medium tracking-[0.18em] text-black/70 uppercase">
+              Solve support succeed
             </div>
 
             <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-0">
@@ -196,8 +204,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portfolio" className="relative h-screen max-h-[760px] min-h-[680px] w-full overflow-hidden bg-white">
-        <div className="mx-auto flex h-full w-full max-w-[1600px] flex-col items-center px-4 pb-10 pt-[64px] sm:px-6 lg:px-10">
+      <section id="portfolio" className="relative w-full overflow-hidden bg-white py-16">
+        <div className="mx-auto flex w-full max-w-[1600px] flex-col items-center px-4 sm:px-6 lg:px-10">
           <div className="mx-auto flex max-w-[620px] flex-col items-center text-center">
             <h2 className="mt-4 max-w-[620px] text-[clamp(38px,4vw,52px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
               Trusted by leaders
@@ -209,34 +217,34 @@ export default function Home() {
 
           </div>
 
-          <div className="relative mt-[-22px] h-[360px] w-full">
+          <div className="relative mt-[-22px] h-[320px] w-full">
             <div className="flex w-full justify-center">
-              <div className="flex h-full w-fit items-end gap-3">
-                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
+              <div className="flex h-full w-fit items-end gap-2">
+                <div className="h-[300px] w-[180px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
                   <Image src="/images/profile pic/pro9.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
+                <div className="h-[280px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
                   <Image src="/images/profile pic/pro1.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
+                <div className="h-[240px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
                   <Image src="/images/profile pic/pro2.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
+                <div className="h-[190px] w-[110px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
                   <Image src="/images/profile pic/pro3.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[160px] w-[82px] flex-none overflow-hidden rounded-[16px] bg-[#f7f7f7] shadow-[0_12px_26px_rgba(0,0,0,0.08)]" style={{ transform: "translateY(34px)" }}>
+                <div className="h-[160px] w-[92px] flex-none overflow-hidden rounded-[16px] bg-[#f7f7f7] shadow-[0_12px_26px_rgba(0,0,0,0.08)]" style={{ transform: "translateY(34px)" }}>
                   <Image src="/images/profile pic/pro4.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[190px] w-[95px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
+                <div className="h-[190px] w-[110px] flex-none overflow-hidden rounded-[18px] bg-[#f7f7f7] shadow-[0_14px_30px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(24px)" }}>
                   <Image src="/images/profile pic/pro5.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[240px] w-[120px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
+                <div className="h-[240px] w-[140px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_42px_rgba(0,0,0,0.12)]" style={{ transform: "translateY(12px)" }}>
                   <Image src="/images/profile pic/pro6.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[280px] w-[140px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
+                <div className="h-[280px] w-[160px] flex-none overflow-hidden rounded-[26px] bg-[#f7f7f7] shadow-[0_20px_48px_rgba(0,0,0,0.14)]" style={{ transform: "translateY(0px)" }}>
                   <Image src="/images/profile pic/pro7.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
-                <div className="h-[300px] w-[160px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
+                <div className="h-[300px] w-[180px] flex-none overflow-hidden rounded-[22px] bg-[#f7f7f7] shadow-[0_18px_40px_rgba(0,0,0,0.10)]" style={{ transform: "translateY(-8px)" }}>
                   <Image src="/images/profile pic/pro8.jpg" alt="" width={360} height={560} className="h-full w-full object-cover" />
                 </div>
               </div>
