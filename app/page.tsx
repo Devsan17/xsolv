@@ -432,7 +432,7 @@ export default function Home() {
               <div className="absolute -left-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 <Image
-                  src="/images/team/CEO 1.png"
+                  src="/images/team/ceo1.png"
                   alt="Xsolv CEO"
                   width={900}
                   height={1100}
@@ -475,7 +475,7 @@ export default function Home() {
               <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 <Image
-                  src="/images/team/CEO 2.png"
+                  src="/images/team/ceo2.png"
                   alt="Xsolv team member"
                   width={700}
                   height={900}
