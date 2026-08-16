@@ -82,7 +82,7 @@ export default function Home() {
             Solve support succeed
           </div>
 
-          <div className="relative hidden min-h-[560px] md:block">
+                    <div className="relative hidden min-h-[560px] md:block">
             <div className="absolute left-6 top-1/2 z-10 -translate-y-1/2 md:left-10 xl:left-16">
               <Image
                 src="/images/3d.png"
@@ -107,7 +107,7 @@ export default function Home() {
               Solve support succeed
             </div>
 
-            <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-0">
+            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-0">
               <Image
                 src="/images/img1.png"
                 alt="Xsolv banner"
@@ -117,8 +117,7 @@ export default function Home() {
               />
             </div>
           </div>
-
-          <div className="mt-0 flex items-center justify-center md:hidden">
+<div className="mt-0 flex items-center justify-center md:hidden">
             <Image
               src="/images/img1.png"
               alt="Xsolv banner"
@@ -429,3 +428,4 @@ export default function Home() {
     </main>
   );
 }
+
