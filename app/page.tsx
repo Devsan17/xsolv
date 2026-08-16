@@ -14,6 +14,8 @@ const iconClassName = "h-6 w-6";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [ceo1Ok, setCeo1Ok] = useState(true);
+  const [ceo2Ok, setCeo2Ok] = useState(true);
 
   return (
     <main className="min-h-screen bg-white text-[#111111]">
@@ -431,13 +433,25 @@ export default function Home() {
             <div className="relative mx-auto w-full max-w-[420px]">
               <div className="absolute -left-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
-                <Image
-                  src="/images/team/ceo1.png"
-                  alt="Xsolv CEO"
-                  width={900}
-                  height={1100}
-                  className="h-auto w-full object-cover"
-                />
+                {ceo1Ok ? (
+                  <Image
+                    src="/images/team/ceo1.png"
+                    alt="Kiran S Poojary"
+                    width={900}
+                    height={1100}
+                    className="h-auto w-full object-cover"
+                    onError={() => setCeo1Ok(false)}
+                  />
+                ) : (
+                  <div className="flex aspect-[9/11] items-center justify-center bg-gradient-to-br from-black/5 to-black/15 p-6 text-center">
+                    <div>
+                      <div className="text-[28px] font-black tracking-[-0.05em] text-black">Kiran S</div>
+                      <div className="mt-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-black/55">
+                        Image unavailable
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -474,13 +488,25 @@ export default function Home() {
             <div className="relative mx-auto w-full max-w-[420px]">
               <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
-                <Image
-                  src="/images/team/ceo2.png"
-                  alt="Xsolv team member"
-                  width={700}
-                  height={900}
-                  className="h-auto w-full object-cover"
-                />
+                {ceo2Ok ? (
+                  <Image
+                    src="/images/team/ceo2.png"
+                    alt="Preethi P Suvarna"
+                    width={700}
+                    height={900}
+                    className="h-auto w-full object-cover"
+                    onError={() => setCeo2Ok(false)}
+                  />
+                ) : (
+                  <div className="flex aspect-[7/9] items-center justify-center bg-gradient-to-br from-black/5 to-black/15 p-6 text-center">
+                    <div>
+                      <div className="text-[28px] font-black tracking-[-0.05em] text-black">Preethi P</div>
+                      <div className="mt-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-black/55">
+                        Image unavailable
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
