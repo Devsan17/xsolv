@@ -45,42 +45,28 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden">
-        <div className="flex h-full w-full items-center justify-center px-4 md:px-8">
-          <div className="relative h-[500px] w-full max-w-[1600px] overflow-hidden">
-            <div className="flex h-full w-full items-center justify-between gap-4 md:gap-8">
-              <div className="flex w-[28%] min-w-0 shrink-0 items-center justify-center">
-                <Image
-                  src="/images/xsolv-3d-logo.png"
-                  alt="Xsolv logo"
-                  width={360}
-                  height={360}
-                  className="h-auto w-full max-h-[320px] object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.12)]"
-                />
-              </div>
+      <section className="relative h-[calc(100vh-88px)] w-full overflow-hidden bg-white">
+        <div className="relative mx-auto h-full w-full max-w-[1600px]">
+          <div className="absolute inset-y-0 left-0 flex items-center justify-start pl-0 md:pl-2 xl:pl-6">
+            <p className="text-left font-black uppercase leading-[0.7] tracking-[-0.08em] text-black/80 text-[clamp(5.5rem,12vw,22rem)]">
+              XSOLV
+            </p>
+          </div>
 
-              <div className="flex min-w-0 flex-1 items-center justify-center overflow-hidden">
-                <p className="text-center font-black uppercase leading-none tracking-[0.05em] text-black/80 text-[clamp(4rem,8vw,12rem)]">
-                  Xsolv
-                </p>
-              </div>
-            </div>
-
-            <div className="pointer-events-none absolute bottom-0 right-0 flex w-[22%] max-w-[300px] translate-x-[2%] translate-y-[2%] items-end justify-end overflow-hidden">
-              <Image
-                src="/images/Banner%20img.png"
-                alt="Xsolv banner"
-                width={420}
-                height={420}
-                className="h-auto w-full max-h-[260px] object-contain scale-[1.1] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
-              />
-            </div>
+          <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-2">
+            <Image
+              src="/images/Banner%20img.png"
+              alt="Xsolv banner"
+              width={500}
+              height={500}
+              className="h-auto w-full origin-bottom-right object-contain scale-[1.18] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+            />
           </div>
         </div>
       </section>
 
       {/* Blank Section */}
-      <section className="w-full h-screen bg-white" />
+      <section className="w-full h-screen bg-black" />
     </main>
   );
 }
