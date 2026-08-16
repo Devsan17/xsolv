@@ -2,7 +2,14 @@
 
 import Image from "next/image";
 
-const navItems = ["Platform", "Solutions", "Method", "Insights"];
+const navItems = [
+  { label: "Hero", href: "#hero" },
+  { label: "Services", href: "#services" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Why Choose", href: "#why-choose" },
+];
+
+const iconClassName = "h-6 w-6";
 
 export default function Home() {
   return (
@@ -27,11 +34,11 @@ export default function Home() {
           <nav className="hidden items-center gap-8 text-sm text-black/60 md:flex">
             {navItems.map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.label}
+                href={item.href}
                 className="relative text-black/65 transition-all duration-300 hover:text-black after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </nav>
@@ -49,7 +56,7 @@ export default function Home() {
         Book a call
       </a>
 
-      <section className="relative w-full overflow-hidden bg-white">
+      <section id="hero" className="relative w-full overflow-hidden bg-white">
         <div className="mx-auto flex w-full max-w-[1600px] flex-col px-6 pb-0 pt-10 md:block md:min-h-[560px] md:px-0 md:pb-0 md:pt-0">
           <div className="mb-6 flex items-center justify-center md:hidden">
             <Image
@@ -115,7 +122,81 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative h-screen max-h-[760px] min-h-[680px] w-full overflow-hidden bg-white">
+      <section id="services" className="w-full bg-black py-20 text-white sm:py-24">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10">
+          <div className="max-w-[760px]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/45">
+              Services
+            </p>
+            <h2 className="mt-4 text-[clamp(30px,4vw,48px)] font-black leading-[1.02] tracking-[-0.05em]">
+              Business support built to keep operations moving.
+            </h2>
+            <p className="mt-4 max-w-[620px] text-[15px] leading-[1.7] text-white/65">
+              Flexible service lines for teams that need dependable execution, clear communication, and steady follow-through.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M12 3l7 3v5c0 4.6-3 8.7-7 10-4-1.3-7-5.4-7-10V6l7-3z" />
+                  <path d="M9.5 12.2l1.9 1.9 3.6-3.8" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">BPO Solutions</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Reliable outsourced business processes designed around your requirements.
+              </p>
+            </article>
+
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M4 13a8 8 0 0 1 16 0" />
+                  <path d="M4 13v4a2 2 0 0 0 2 2h2v-6H6a2 2 0 0 0-2 2z" />
+                  <path d="M20 13v4a2 2 0 0 1-2 2h-2v-6h2a2 2 0 0 1 2 2z" />
+                  <path d="M12 19a2 2 0 0 0 2-2" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">Customer Support</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Professional communication that helps businesses build stronger customer relationships.
+              </p>
+            </article>
+
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M7 7h4v4H7z" />
+                  <path d="M13 13h4v4h-4z" />
+                  <path d="M11 9h2a2 2 0 0 1 2 2v2" />
+                  <path d="M9 11H7a2 2 0 0 0-2 2v2" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">Recovery &amp; Collections</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Structured and ethical recovery focused on consistent follow-up and improved collection efficiency.
+              </p>
+            </article>
+
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M4 6h16v10H4z" />
+                  <path d="M4 12h4l2 3h4l2-3h4" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">Back-Office Support</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Operational support that helps your internal team focus on core business priorities.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" className="relative h-screen max-h-[760px] min-h-[680px] w-full overflow-hidden bg-white">
         <div className="mx-auto flex h-full w-full max-w-[1600px] flex-col items-center px-4 pb-10 pt-[64px] sm:px-6 lg:px-10">
           <div className="mx-auto flex max-w-[620px] flex-col items-center text-center">
             <h2 className="mt-4 max-w-[620px] text-[clamp(38px,4vw,52px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
@@ -164,6 +245,179 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section id="why-choose" className="flex min-h-screen w-full items-center bg-black text-white">
+        <div className="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 lg:px-10">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr] lg:items-start">
+              <div className="max-w-[560px]">
+                <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/72 sm:text-[12px]">
+                  <span>Why Businesses Choose Xsolv</span>
+                </div>
+
+                <h2 className="mt-6 text-[clamp(44px,5vw,64px)] font-black leading-[1.05] tracking-[-0.05em] text-white">
+                  Performance you can
+                  <br />
+                  measure.
+                </h2>
+              </div>
+
+              <div className="relative overflow-hidden rounded-[12px] border border-white/8 bg-[#050505] p-5 sm:p-6">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_45%,rgba(255,255,255,0.16),transparent_36%),radial-gradient(circle_at_52%_62%,rgba(255,255,255,0.08),transparent_30%)]" />
+                <div className="relative flex h-[280px] flex-col justify-between">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="max-w-[280px] text-[13px] leading-[1.45] text-white/72">
+                      A sleek line graph showing a strong upward trend in business performance over time.
+                    </div>
+                    <div className="text-right text-[34px] font-medium tracking-[-0.06em] text-white/88">+32%</div>
+                  </div>
+
+                  <svg viewBox="0 0 900 250" className="h-[170px] w-full" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="xsGraphGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="rgba(255,255,255,0.0)" />
+                        <stop offset="50%" stopColor="rgba(255,255,255,0.14)" />
+                        <stop offset="100%" stopColor="rgba(255,255,255,0.28)" />
+                      </linearGradient>
+                      <linearGradient id="xsGraphFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="rgba(255,255,255,0.72)" />
+                        <stop offset="100%" stopColor="rgba(255,255,255,0.02)" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34 L900,250 L0,250 Z"
+                      fill="url(#xsGraphFill)"
+                    />
+                    <path
+                      d="M0,220 C90,230 140,180 220,180 C300,180 350,200 420,174 C500,145 560,86 640,92 C720,98 760,138 820,106 C860,85 890,52 900,34"
+                      fill="none"
+                      stroke="url(#xsGraphGlow)"
+                      strokeWidth="5"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">+35%</div>
+                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Improvement in process productivity</p>
+                    </div>
+                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">- 40%</div>
+                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Reduction in operational delays</p>
+                    </div>
+                    <div className="rounded-[10px] border border-white/8 bg-white/6 px-3 py-3">
+                      <div className="text-[28px] font-medium tracking-[-0.05em] text-white">24/7</div>
+                      <p className="mt-2 text-[12px] leading-[1.45] text-white/68">Continuous customer support coverage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {[
+                {
+                  title: "Operational Efficiency",
+                  icon: (
+                    <path d="M4 16a8 8 0 0 1 16 0" />
+                  ),
+                },
+                {
+                  title: "Professional Customer Handling",
+                  icon: (
+                    <>
+                      <circle cx="12" cy="8" r="3" />
+                      <path d="M5 18a7 7 0 0 1 14 0" />
+                    </>
+                  ),
+                },
+                {
+                  title: "Scalable Solutions",
+                  icon: (
+                    <>
+                      <path d="M6 16l6-6 4 4 4-8" />
+                      <path d="M14 6h6v6" />
+                    </>
+                  ),
+                },
+                {
+                  title: "Performance-Focused Processes",
+                  icon: (
+                    <>
+                      <circle cx="12" cy="12" r="6" />
+                      <path d="M12 12l3-3" />
+                    </>
+                  ),
+                },
+                {
+                  title: "Transparent Reporting",
+                  icon: (
+                    <>
+                      <path d="M6 18V8" />
+                      <path d="M12 18V5" />
+                      <path d="M18 18v-9" />
+                    </>
+                  ),
+                },
+                {
+                  title: "Dedicated Team",
+                  icon: (
+                    <>
+                      <circle cx="9" cy="9" r="2.2" />
+                      <circle cx="15" cy="9" r="2.2" />
+                      <path d="M5.5 18a3.5 3.5 0 0 1 7 0" />
+                      <path d="M11.5 18a3.5 3.5 0 0 1 7 0" />
+                    </>
+                  ),
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="flex min-h-[90px] items-center gap-4 rounded-[8px] border border-white/5 bg-white/[0.03] px-4 py-4"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] border border-white/12 bg-white/[0.04] text-white">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-[19px] w-[19px]"
+                      aria-hidden="true"
+                    >
+                      {item.icon}
+                    </svg>
+                  </div>
+                  <div className="text-[15px] font-semibold leading-[1.2] text-white">
+                    {item.title}
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
+        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-4 text-sm text-white/60 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+          <div className="font-semibold tracking-[0.22em] text-white/80">XSOLV</div>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <span>Strategy</span>
+            <span>Systems</span>
+            <span>Growth</span>
+          </div>
+          <span className="flex items-center justify-center gap-1.5">
+            Design &amp; Code by
+            <a
+              className="text-lg font-bold uppercase tracking-[0.08em] md:text-xl"
+              href="/"
+              style={{ fontFamily: '"Courier New", monospace' }}
+            >
+              BigBotCo.
+            </a>
+          </span>
+        </div>
+      </footer>
     </main>
   );
 }
