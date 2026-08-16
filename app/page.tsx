@@ -406,14 +406,14 @@ export default function Home() {
       </section>
 
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
-        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-4 text-sm text-white/60 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-10">
-          <div className="font-semibold tracking-[0.22em] text-white/80">XSOLV</div>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <div className="mx-auto grid w-full max-w-[1600px] gap-4 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
+          <div className="font-semibold tracking-[0.22em] text-white/80 lg:justify-self-start">XSOLV</div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <span>Strategy</span>
             <span>Systems</span>
             <span>Growth</span>
           </div>
-          <span className="flex items-center justify-center gap-1.5">
+          <span className="flex items-center justify-center gap-1.5 lg:justify-self-center">
             Design &amp; Code by
             <a
               className="text-lg font-bold uppercase tracking-[0.08em] md:text-xl"
