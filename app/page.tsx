@@ -425,6 +425,68 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full bg-white pb-6 pt-16 text-black">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-[minmax(320px,420px)_1fr] lg:items-center">
+            <div className="relative mx-auto w-full max-w-[420px]">
+              <div className="absolute -left-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
+              <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
+                <Image
+                  src="/images/team/CEO 1.png"
+                  alt="Xsolv CEO"
+                  width={900}
+                  height={1100}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="max-w-[760px]">
+              <h2 className="text-[clamp(32px,4vw,48px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
+                Kiran S Poojary
+              </h2>
+              <p className="mt-2 text-[15px] font-semibold uppercase tracking-[0.18em] text-black/55 sm:text-[16px]">
+                Founder &amp; Managing Director
+              </p>
+              <p className="mt-6 max-w-[760px] text-[15px] leading-[1.85] text-black/70 sm:text-[16px]">
+                At Xsolv, I believe business growth and employee growth should happen together. We want to build a company where people don&apos;t simply come to work – they learn, grow, take responsibility, develop confidence, and build their future. Our goal is simple: create value for our clients while creating meaningful opportunities for our people. When our clients grow, we grow. When our employees grow, Xsolv grows with them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-white py-16 text-black">
+        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-[1fr_minmax(320px,420px)] lg:items-center">
+            <div className="max-w-[760px]">
+              <h2 className="text-[clamp(32px,4vw,48px)] font-black leading-[1.02] tracking-[-0.05em] text-black">
+                Preethi P Suvarna
+              </h2>
+              <p className="mt-2 text-[15px] font-semibold uppercase tracking-[0.18em] text-black/55 sm:text-[16px]">
+                Director
+              </p>
+              <p className="mt-6 max-w-[760px] text-[15px] leading-[1.85] text-black/70 sm:text-[16px]">
+                At Xsolv, our focus is on building strong systems, dependable teams, and lasting relationships with our clients. We believe that sustainable growth comes from consistency, collaboration, and a commitment to doing things the right way. As we continue to grow, our priority remains the same: to empower our people, deliver meaningful results for our clients, and create a workplace where everyone has the opportunity to learn, contribute, and move forward with confidence.
+              </p>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-[420px]">
+              <div className="absolute -right-3 -top-3 h-full w-full rounded-[28px] border border-black/10 bg-black/5" />
+              <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
+                <Image
+                  src="/images/team/CEO 2.png"
+                  alt="Xsolv team member"
+                  width={700}
+                  height={900}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
         <div className="mx-auto grid w-full max-w-[1600px] gap-4 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
           <div className="font-semibold tracking-[0.22em] text-white/80 lg:justify-self-start">XSOLV</div>
@@ -450,4 +512,5 @@ export default function Home() {
     </main>
   );
 }
+
 
