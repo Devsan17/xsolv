@@ -144,19 +144,19 @@ export default function Home() {
               Solve support succeed
             </div>
 
-            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[32%] max-w-[500px] min-w-[260px] pr-3 pb-0">
+            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[38%] max-w-[620px] min-w-[320px] pr-3 pb-0">
               <Image
-                src="/images/img1.png"
+                src="/images/builds.png"
                 alt="Xsolv banner"
                 width={500}
                 height={500}
-                className="h-auto w-full origin-bottom-right object-contain scale-[1.18] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+                className="h-auto w-full origin-bottom-right object-contain scale-[1.22] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
               />
             </div>
           </div>
 <div className="mt-0 flex items-center justify-center md:hidden">
             <Image
-              src="/images/img1.png"
+              src="/images/builds.png"
               alt="Xsolv banner"
               width={500}
               height={500}
