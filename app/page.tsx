@@ -158,13 +158,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[42%] max-w-[720px] min-w-[360px] pr-0 pb-0">
+            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[46%] max-w-[800px] min-w-[360px] pr-0 pb-0">
               <Image
                 src="/images/builds.png"
                 alt="Xsolv banner"
                 width={500}
                 height={500}
-                className="h-auto w-full origin-bottom-right object-contain scale-[1.28] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+                className="h-auto w-full origin-bottom-right object-contain scale-[1.28] translate-x-2 drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
               />
             </div>
 
