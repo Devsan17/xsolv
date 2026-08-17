@@ -114,13 +114,9 @@ export default function Home() {
           </div>
 
           <div className="mb-2 flex items-center justify-center md:hidden">
-            <Image
-              src="/images/xsolv text.png"
-              alt="Xsolv text"
-              width={700}
-              height={220}
-              className="h-auto w-[min(82vw,520px)] object-contain"
-            />
+            <div className="text-[clamp(63px,18vw,108px)] font-black leading-none tracking-[-0.06em] text-black">
+              Xsolv
+            </div>
           </div>
 
           <div className="mb-6 text-center text-[14px] font-medium tracking-[0.18em] text-black/70 uppercase md:hidden">
@@ -139,16 +135,12 @@ export default function Home() {
             </div>
 
             <div className="absolute inset-y-0 left-0 flex items-center justify-start pl-72 md:pl-80 xl:pl-96">
-              <Image
-                src="/images/xsolv text.png"
-                alt="Xsolv text"
-                width={700}
-                height={220}
-                className="h-auto w-[min(700px,55vw)] -ml-8 object-contain"
-              />
+              <div className="text-[clamp(96px,12vw,180px)] font-black leading-none tracking-[-0.06em] text-black">
+                Xsolv
+              </div>
             </div>
 
-            <div className="absolute left-0 top-[62%] w-full text-center text-[16px] font-bold tracking-[0.18em] text-black/70 uppercase">
+            <div className="absolute left-0 top-[70%] w-full text-center text-[16px] font-bold tracking-[0.18em] text-black/70 uppercase">
               Solve support succeed
             </div>
 
@@ -570,12 +562,7 @@ export default function Home() {
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
         <div className="mx-auto grid w-full max-w-[1600px] gap-4 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
           <div className="font-semibold tracking-[0.22em] text-white/80 lg:justify-self-start">XSOLV</div>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            <span>Strategy</span>
-            <span>Systems</span>
-            <span>Growth</span>
-          </div>
-          <span className="flex flex-col items-center justify-center gap-1.5 lg:justify-self-center">
+          <span className="flex flex-col items-center justify-center gap-1.5 lg:justify-self-center lg:text-center">
             <span>Design &amp; Code by</span>
             <a
               className="text-sm font-bold uppercase tracking-[0.08em] md:text-xl"
@@ -587,6 +574,11 @@ export default function Home() {
               BigBotCo.
             </a>
           </span>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 lg:justify-self-end">
+            <span>Strategy</span>
+            <span>Systems</span>
+            <span>Growth</span>
+          </div>
         </div>
       </footer>
     </main>
