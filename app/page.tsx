@@ -472,7 +472,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 {ceo1Ok ? (
                   <Image
-                    src="/images/team/kiran1.png"
+                    src="/images/team/kir.jpeg"
                     alt="Kiran S Poojary"
                     width={900}
                     height={1100}
