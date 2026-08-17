@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Xsolv | Strategy, Systems, Growth",
   description: "Black and white Xsolv landing page built with Next.js.",
+  icons: {
+    icon: "/images/logos.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
