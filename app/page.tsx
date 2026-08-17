@@ -577,6 +577,18 @@ export default function Home() {
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
         <div className="mx-auto grid w-full max-w-[1600px] gap-4 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
           <div className="font-semibold tracking-[0.22em] text-white/80 lg:justify-self-start">XSOLV</div>
+          <span className="hidden flex-col items-center justify-center gap-1.5 lg:flex lg:justify-self-center lg:text-center">
+            <span>Design &amp; Code by</span>
+            <a
+              className="text-sm font-bold uppercase tracking-[0.08em]"
+              href="https://www.bigbotco.com/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ fontFamily: '"Courier New", monospace' }}
+            >
+              BigBotCo.
+            </a>
+          </span>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 lg:justify-self-end">
             <span>Strategy</span>
             <span>Systems</span>
