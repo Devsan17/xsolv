@@ -59,7 +59,7 @@ export default function Home() {
             </button>
           </div>
 
-          <nav className="hidden items-center gap-8 text-sm text-black/60 md:flex">
+          <nav className="hidden items-center gap-8 text-[15px] tracking-[0.04em] text-black/60 md:flex">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -71,8 +71,8 @@ export default function Home() {
             ))}
           </nav>
 
-          <button className="hidden rounded-full border border-black/10 bg-black px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] lg:inline-flex">
-            Book a call
+          <button className="hidden rounded-full border border-[#EEEEEE] bg-black px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] lg:inline-flex">
+            Book a Call ↗
           </button>
         </div>
 
@@ -135,24 +135,41 @@ export default function Home() {
             </div>
 
             <div className="absolute inset-y-0 left-0 flex items-center justify-start pl-72 md:pl-80 xl:pl-96">
-              <div className="text-[clamp(96px,12vw,180px)] font-black leading-none tracking-[-0.06em] text-black">
-                Xsolv
+              <div className="max-w-[980px]">
+                <div className="mb-4 text-[11px] font-semibold uppercase tracking-[0.45em] text-black/45">
+                  Digital • Technology • Growth
+                </div>
+                <div className="text-[clamp(96px,12vw,180px)] font-black leading-none tracking-[-0.06em] text-black">
+                  Xsolv
+                </div>
+                <div className="mt-4 text-[clamp(26px,2.4vw,40px)] font-semibold leading-[1.1] tracking-[-0.04em] text-black/82">
+                  Solve • Support • Succeed
+                </div>
+                <p className="mt-5 max-w-[720px] text-[clamp(16px,1.3vw,22px)] leading-[1.7] text-black/70">
+                  Technology that moves businesses forward.
+                </p>
+                <a
+                  href="#services"
+                  className="mt-7 inline-flex items-center gap-2 rounded-full border border-black/10 bg-black px-5 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black"
+                >
+                  Explore Services
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
 
-            <div className="absolute left-0 top-[70%] w-full text-center text-[16px] font-bold tracking-[0.18em] text-black/70 uppercase">
-              Solve support succeed
-            </div>
-
-            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[38%] max-w-[620px] min-w-[320px] pr-3 pb-0">
+            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[42%] max-w-[720px] min-w-[360px] pr-0 pb-0">
+              <div className="absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white via-white/85 to-transparent sm:w-40" />
+              <div className="absolute left-0 top-0 z-10 h-24 w-full bg-gradient-to-b from-white via-white/65 to-transparent sm:h-32" />
               <Image
                 src="/images/builds.png"
                 alt="Xsolv banner"
                 width={500}
                 height={500}
-                className="h-auto w-full origin-bottom-right object-contain scale-[1.22] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+                className="h-auto w-full origin-bottom-right object-contain scale-[1.28] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
               />
             </div>
+
           </div>
 <div className="mt-0 flex items-center justify-center md:hidden">
             <Image
