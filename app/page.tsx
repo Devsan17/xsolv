@@ -159,8 +159,6 @@ export default function Home() {
             </div>
 
             <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[42%] max-w-[720px] min-w-[360px] pr-0 pb-0">
-              <div className="absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white via-white/85 to-transparent sm:w-40" />
-              <div className="absolute left-0 top-0 z-10 h-24 w-full bg-gradient-to-b from-white via-white/65 to-transparent sm:h-32" />
               <Image
                 src="/images/builds.png"
                 alt="Xsolv banner"
