@@ -158,24 +158,24 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[46%] max-w-[800px] min-w-[360px] pr-0 pb-0">
+            <div className="pointer-events-none absolute bottom-0 right-0 z-20 w-[50%] max-w-[800px] min-w-[280px] pr-0 pb-0 md:w-[48%] lg:w-[46%]">
               <Image
                 src="/images/builds.png"
                 alt="Xsolv banner"
                 width={500}
                 height={500}
-                className="h-auto w-full origin-bottom-right object-contain scale-[1.28] translate-x-2 drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+                className="h-auto w-full origin-bottom-right object-contain scale-[1.18] translate-x-2 md:scale-[1.24] lg:scale-[1.28] drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
               />
             </div>
 
           </div>
-<div className="mt-0 flex items-center justify-center md:hidden">
+          <div className="mt-0 flex items-center justify-center md:hidden">
             <Image
               src="/images/builds.png"
               alt="Xsolv banner"
               width={500}
               height={500}
-              className="h-auto w-[92vw] max-w-[520px] object-contain drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
+              className="h-auto w-[calc(100vw+1.5rem)] max-w-none object-contain translate-x-2 drop-shadow-[0_18px_32px_rgba(0,0,0,0.12)]"
             />
           </div>
         </div>
