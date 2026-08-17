@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex items-center justify-between gap-3 lg:justify-start">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/3d.png"
+                src="/images/logos.png"
                 alt="Xsolv logo"
                 width={28}
                 height={28}
@@ -105,7 +105,7 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-[1600px] flex-col px-6 pb-0 pt-10 md:block md:min-h-[560px] md:px-0 md:pb-0 md:pt-0">
           <div className="mb-6 flex items-center justify-center md:hidden">
             <Image
-              src="/images/3d.png"
+              src="/images/logos.png"
               alt="Xsolv logo"
               width={88}
               height={88}
@@ -126,7 +126,7 @@ export default function Home() {
                     <div className="relative hidden min-h-[560px] md:block">
             <div className="absolute left-6 top-1/2 z-10 -translate-y-1/2 md:left-10 xl:left-16">
               <Image
-                src="/images/3d.png"
+                src="/images/logos.png"
                 alt="Xsolv logo"
                 width={250}
                 height={250}
