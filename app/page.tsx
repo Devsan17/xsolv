@@ -188,7 +188,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
@@ -242,6 +242,36 @@ export default function Home() {
               <h3 className="mt-5 text-[20px] font-semibold text-white">Back-Office Support</h3>
               <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
                 Operational support that helps your internal team focus on core business priorities.
+              </p>
+            </article>
+
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M4 7h16v10H4z" />
+                  <path d="M7 10h10" />
+                  <path d="M7 13h6" />
+                  <path d="M7 17l3-3 2 2 4-4" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">Process Management</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Streamline and manage repetitive business processes.
+              </p>
+            </article>
+
+            <article className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.28)] backdrop-blur-[2px]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={iconClassName} aria-hidden="true">
+                  <path d="M4 5h16v14H4z" />
+                  <path d="M8 9h8" />
+                  <path d="M8 13h5" />
+                  <path d="M6 17c1.5-2 3.3-3 6-3s4.5 1 6 3" />
+                </svg>
+              </div>
+              <h3 className="mt-5 text-[20px] font-semibold text-white">Telecalling</h3>
+              <p className="mt-3 text-[14px] leading-[1.7] text-white/68">
+                Handle inbound and outbound customer calls.
               </p>
             </article>
           </div>
@@ -435,7 +465,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-[0_20px_50px_rgba(0,0,0,0.10)]">
                 {ceo1Ok ? (
                   <Image
-                    src="/images/team/kiran.png"
+                    src="/images/team/kiran1.png"
                     alt="Kiran S Poojary"
                     width={900}
                     height={1100}
