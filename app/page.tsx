@@ -578,8 +578,8 @@ export default function Home() {
       </section>
 
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
-        <div className="mx-auto grid w-full max-w-[1600px] gap-8 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-start lg:px-10">
-          <div className="flex flex-col gap-2 text-center text-white/70 lg:justify-self-start lg:text-left">
+        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-8 px-4 text-sm text-white/60 sm:px-6 lg:grid lg:grid-cols-3 lg:items-start lg:px-10">
+          <div className="order-1 flex flex-col gap-2 text-center text-white/70 lg:justify-self-start lg:text-left">
             <div className="font-semibold text-white/85">Xsolv Business Solutions</div>
             <div>No. 75, Sirimudi, 4th Stage, 3rd Block, Basaveshwara Nagar, Bangalore - 560079</div>
             <a className="transition hover:text-white" href="mailto:xsolvbusinesssolutions@gmail.com">
@@ -589,7 +589,18 @@ export default function Home() {
               +91-9741432331
             </a>
           </div>
-          <div className="flex flex-col items-center justify-center gap-1.5 text-center text-white/70 lg:justify-self-center lg:text-center">
+          <div className="order-2 flex flex-col items-center gap-3 text-center text-white/70 lg:justify-self-end lg:items-end lg:text-right">
+            <a className="transition hover:text-white" href="/about-xsolv">
+              About Xsolv
+            </a>
+            <a className="transition hover:text-white" href="/privacy-policy">
+              Privacy Policy
+            </a>
+            <a className="transition hover:text-white" href="/terms-conditions">
+              Terms &amp; Conditions
+            </a>
+          </div>
+          <div className="order-3 flex flex-col items-center justify-center gap-1.5 text-center text-white/70 lg:order-2 lg:justify-self-center lg:text-center">
             <span>Design &amp; Code by</span>
             <a
               className="text-sm font-bold uppercase tracking-[0.08em]"
@@ -599,17 +610,6 @@ export default function Home() {
               style={{ fontFamily: '"Courier New", monospace' }}
             >
               BigBotCo.
-            </a>
-          </div>
-          <div className="flex flex-col items-center gap-3 text-center text-white/70 lg:justify-self-end lg:items-end lg:text-right">
-            <a className="transition hover:text-white" href="/about-xsolv">
-              About Xsolv
-            </a>
-            <a className="transition hover:text-white" href="/privacy-policy">
-              Privacy Policy
-            </a>
-            <a className="transition hover:text-white" href="/terms-conditions">
-              Terms &amp; Conditions
             </a>
           </div>
         </div>
