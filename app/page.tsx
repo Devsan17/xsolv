@@ -604,20 +604,6 @@ export default function Home() {
           <div />
         </div>
       </footer>
-      <div className="w-full bg-black pb-8 text-center text-white/70 md:hidden">
-        <div className="flex flex-col items-center gap-1.5 text-sm sm:text-base">
-          <span>Design &amp; Code by</span>
-          <a
-            className="text-sm font-bold uppercase tracking-[0.08em]"
-            href="https://www.bigbotco.com/"
-            target="_blank"
-            rel="noreferrer"
-            style={{ fontFamily: '"Courier New", monospace' }}
-          >
-            BigBotCo.
-          </a>
-        </div>
-      </div>
     </main>
   );
 
