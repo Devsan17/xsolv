@@ -601,7 +601,17 @@ export default function Home() {
               BigBotCo.
             </a>
           </div>
-          <div />
+          <div className="flex flex-col items-center gap-3 text-center text-white/70 lg:justify-self-end lg:items-end lg:text-right">
+            <a className="transition hover:text-white" href="/about-xsolv">
+              About Xsolv
+            </a>
+            <a className="transition hover:text-white" href="/privacy-policy">
+              Privacy Policy
+            </a>
+            <a className="transition hover:text-white" href="/terms-conditions">
+              Terms &amp; Conditions
+            </a>
+          </div>
         </div>
       </footer>
     </main>
