@@ -71,9 +71,12 @@ export default function Home() {
             ))}
           </nav>
 
-          <button className="hidden rounded-full border border-[#EEEEEE] bg-black px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] lg:inline-flex">
+          <a
+            href="tel:9741432331"
+            className="hidden rounded-full border border-[#EEEEEE] bg-black px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] lg:inline-flex"
+          >
             Book a Call ↗
-          </button>
+          </a>
         </div>
 
         {menuOpen ? (
@@ -95,7 +98,7 @@ export default function Home() {
       </header>
 
       <a
-        href="#"
+        href="tel:9741432331"
         className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center rounded-full border border-black/10 bg-black px-4 py-3 text-xs font-medium text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5 sm:hidden"
       >
         Book a call
@@ -575,9 +578,19 @@ export default function Home() {
       </section>
 
       <footer className="w-full border-t border-white/10 bg-black py-8 text-white">
-        <div className="mx-auto grid w-full max-w-[1600px] gap-4 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
+        <div className="mx-auto grid w-full max-w-[1600px] gap-6 px-4 text-sm text-white/60 sm:px-6 lg:grid-cols-3 lg:items-center lg:px-10">
           <div className="font-semibold tracking-[0.22em] text-white/80 lg:justify-self-start">XSOLV</div>
-          <span className="hidden flex-col items-center justify-center gap-1.5 lg:flex lg:justify-self-center lg:text-center">
+          <div className="flex flex-col gap-2 text-center text-white/70 lg:justify-self-center">
+            <div className="font-semibold text-white/85">Xsolv Business Solutions</div>
+            <div>No. 75, Sirimudi, 4th Stage, 3rd Block, Basaveshwara Nagar, Bangalore - 560079</div>
+            <a className="transition hover:text-white" href="mailto:xsolvbusinesssolutions@gmail.com">
+              xsolvbusinesssolutions@gmail.com
+            </a>
+            <a className="transition hover:text-white" href="tel:9741432331">
+              +91-9741432331
+            </a>
+          </div>
+          <span className="hidden flex-col items-center justify-center gap-1.5 lg:flex lg:justify-self-end lg:text-center">
             <span>Design &amp; Code by</span>
             <a
               className="text-sm font-bold uppercase tracking-[0.08em]"
@@ -589,11 +602,6 @@ export default function Home() {
               BigBotCo.
             </a>
           </span>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 lg:justify-self-end">
-            <span>Strategy</span>
-            <span>Systems</span>
-            <span>Growth</span>
-          </div>
         </div>
       </footer>
       <div className="w-full bg-black pb-8 text-center text-white/70 md:hidden">
