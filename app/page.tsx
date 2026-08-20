@@ -122,6 +122,10 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="mb-4 text-center text-[clamp(16px,4.2vw,22px)] font-semibold leading-[1.15] tracking-[-0.03em] text-black/78 md:hidden">
+            Business solutions
+          </div>
+
           <div className="mb-6 text-center text-[14px] font-medium tracking-[0.18em] text-black/70 uppercase md:hidden">
             Solve support succeed
           </div>
@@ -139,17 +143,17 @@ export default function Home() {
 
             <div className="absolute inset-y-0 left-0 flex items-center justify-start pl-72 md:pl-80 xl:pl-96">
               <div className="max-w-[980px]">
-                <div className="mb-4 text-[11px] font-semibold uppercase tracking-[0.45em] text-black/45">
-                  Digital • Technology • Growth
-                </div>
                 <div className="text-[clamp(96px,12vw,180px)] font-black leading-none tracking-[-0.06em] text-black">
                   Xsolv
+                </div>
+                <div className="mt-4 text-[clamp(18px,1.8vw,28px)] font-semibold leading-[1.15] tracking-[-0.03em] text-black/78">
+                  Business solutions
                 </div>
                 <div className="mt-4 text-[clamp(26px,2.4vw,40px)] font-semibold leading-[1.1] tracking-[-0.04em] text-black/82">
                   Solve • Support • Succeed
                 </div>
                 <p className="mt-5 max-w-[720px] text-[clamp(16px,1.3vw,22px)] leading-[1.7] text-black/70">
-                  Technology that moves businesses forward.
+                  Business Solutions That Drive Growth
                 </p>
                 <a
                   href="#services"
