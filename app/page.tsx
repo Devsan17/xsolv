@@ -11,6 +11,8 @@ const navItems = [
 ];
 
 const iconClassName = "h-6 w-6";
+const whatsappMessage = encodeURIComponent("Hi Xsolv, I would like to get in touch.");
+const whatsappHref = `https://wa.me/919741432331?text=${whatsappMessage}`;
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -102,6 +104,24 @@ export default function Home() {
         className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center rounded-full border border-black/10 bg-black px-4 py-3 text-xs font-medium text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5 sm:hidden"
       >
         Book a call
+      </a>
+
+      <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-16 right-4 z-50 inline-flex items-center justify-center rounded-full border border-green-500/20 bg-[#25D366] px-4 py-3 text-xs font-medium text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5 sm:hidden"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-4 right-4 z-50 hidden items-center justify-center rounded-full border border-green-500/20 bg-[#25D366] px-5 py-3 text-sm font-medium text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5 sm:inline-flex"
+      >
+        WhatsApp ↗
       </a>
 
       <section id="hero" className="relative w-full overflow-hidden bg-white">
